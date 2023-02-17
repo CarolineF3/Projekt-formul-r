@@ -23,6 +23,10 @@ body {
   /* margin: auto; */
 }
 
+.asterix {
+  color: red;
+}
+
 .input {
   margin-bottom: 10px;
   border-radius: 2px;
@@ -34,6 +38,11 @@ body {
   border: 1px solid red;
 }
 
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+
 button {
   padding: 8px;
   border-radius: 0px;
@@ -43,4 +52,9 @@ button {
   margin-top: 16px;
   background-color: rgb(255, 236, 234);
   font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(105%);
 }
