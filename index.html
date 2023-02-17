@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
+    <link href="./index.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Carros burkvin</title>
   </head>
   <body>
     <main class="page-wrapper">
       <form class="form">
         <label for="user-name">Name</label>
-        <input id="user-name" placeholder="Ove" type="text" />
+        <input class="input" id="user-name" placeholder="Ove" type="text" />
         <label for="age">Age</label>
-        <input id="age" placeholder="35" type="number" />
+        <input class="input" id="age" placeholder="35" type="number" />
         <label for="email">Email</label>
-        <input id="email" placeholder="***@***.com" type="email" />
+        <input
+          class="input"
+          id="email"
+          placeholder="***@***.com"
+          type="email"
+        />
         <label for="favorite-wine">Favorite Wine</label>
-        <input id="favorite-wine" placeholder="Burkvinet" type="text" />
+        <input
+          class="input"
+          id="favorite-wine"
+          placeholder="Burkvinet"
+          type="text"
+        />
         <button id="submit-button" type="button">Submit</button>
+        <div id="results"></div>
       </form>
-      <div id="results"></div>
     </main>
     <script src="index.js"></script>
   </body>
