@@ -39,3 +39,7 @@ img {
   display: flex;
   flex-direction: row;
 }
+
+.cocktail-info-wrapper div {
+  flex-grow: 1;
+}

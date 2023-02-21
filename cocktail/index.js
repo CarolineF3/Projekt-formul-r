@@ -43,6 +43,7 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic")
                   ${ingredientElements}
                   <p>${data.drinks[0].strInstructions}</p>
                 </div>
+                <i class='icon-remove'></i>
               </article>
             `;
           });
@@ -56,3 +57,11 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic")
       //  `;
     });
   });
+
+overlay.addEventListener("click", (e) => {
+  console.log(e.target);
+  if (e.target.id === "overlay") {
+    overlay.classList.add("hidden");
+    overlay.innerHTML = "";
+  }
+});
