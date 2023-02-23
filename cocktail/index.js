@@ -43,9 +43,14 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic")
                   ${ingredientElements}
                   <p>${data.drinks[0].strInstructions}</p>
                 </div>
-                <i class='icon-remove'></i>
+                <i class="icon-remove" id="icon-remove"></i>
               </article>
             `;
+            const iconRemove = document.getElementById("icon-remove");
+            iconRemove.addEventListener("click", (e) => {
+              overlay.innerHTML = "";
+              overlay.classList.add("hidden");
+            });
           });
       });
 

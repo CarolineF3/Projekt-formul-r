@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
 * {
   box-sizing: content-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
 }
 
 .cocktail-wrapper {
@@ -7,6 +13,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: black;
 }
 
 img {
@@ -16,6 +23,13 @@ img {
 .cocktail-card {
   margin: 20px;
   width: 20%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cocktail-card img {
+  margin-bottom: 8px;
 }
 
 .hidden {
@@ -34,12 +48,27 @@ img {
 .cocktail-info-wrapper {
   position: fixed;
   z-index: 10;
-  background-color: aliceblue;
-  height: 300px;
+  min-height: 50px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  padding: 16px;
+  background-color: white;
 }
 
 .cocktail-info-wrapper div {
   flex-grow: 1;
+}
+
+.cocktail-info-wrapper img {
+  margin-right: 15px;
+  object-fit: contain;
+  width: 20%;
+}
+
+.icon-remove {
+  font-size: 30px;
+  color: grey;
+  cursor: pointer;
+  margin-left: 40px;
 }
